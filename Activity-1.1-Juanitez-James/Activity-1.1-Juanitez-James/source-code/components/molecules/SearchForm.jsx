@@ -1,0 +1,1 @@
+export default function SearchForm(){return <form role="search"><label htmlFor="site-search">Search heritage sites</label><input id="site-search" type="search" placeholder="Search..." /></form>}

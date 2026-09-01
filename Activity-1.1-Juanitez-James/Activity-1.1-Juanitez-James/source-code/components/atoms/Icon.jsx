@@ -1,0 +1,1 @@
+export default function Icon({label="★"}) { return <span aria-hidden="true">{label}</span>; }

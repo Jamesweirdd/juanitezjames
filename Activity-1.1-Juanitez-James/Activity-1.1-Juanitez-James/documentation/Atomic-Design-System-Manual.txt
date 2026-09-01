@@ -1,0 +1,87 @@
+PANGASINAN HERITAGE DIGITAL SHOWCASE
+ATOMIC DESIGN SYSTEM MANUAL
+
+Prepared by: James Juanitez
+Activity 1.1
+
+1. DESIGN SYSTEM OVERVIEW
+The project follows Brad Frost's Atomic Design methodology. Components are divided into atoms, molecules, and organisms. This keeps the interface modular and makes it easier for another developer to reuse components.
+
+2. ATOMS
+
+2.1 Button
+Visual preview: [ Explore Heritage ]
+Usage Context: Used for important actions such as exploring heritage content.
+Responsive Logic: The button uses flexible padding and remains readable on small screens.
+Code Reference: components/atoms/Button.jsx
+
+2.2 Typography
+Visual preview: Eyebrow text + section heading
+Usage Context: Used for headings, labels, and section titles.
+Responsive Logic: The main hero heading uses CSS clamp() so the text scales between mobile and desktop.
+Code Reference: components/atoms/Typography.jsx
+
+2.3 Color Tokens
+Visual preview: Primary #0f4c5c, Accent #f4a261, Background #f8fafb.
+Usage Context: Provides consistent colors across the interface.
+Responsive Logic: Tokens do not change by screen size, keeping the visual identity consistent.
+Code Reference: components/atoms/ColorTokens.jsx
+
+2.4 Icon
+Visual preview: ★
+Usage Context: Small visual indicators can be reused in cards or navigation.
+Responsive Logic: Icons remain inline and scale with surrounding text.
+Code Reference: components/atoms/Icon.jsx
+
+2.5 Image
+Visual preview: Pangasinan Heritage image placeholder
+Usage Context: Used for heritage-site imagery.
+Responsive Logic: The image area changes height slightly on smaller screens and fills the card width.
+Code Reference: components/atoms/Image.jsx
+
+3. MOLECULES
+
+3.1 Heritage Card
+Visual preview: Image + site name + location + description + Learn more
+Usage Context: Used exclusively for displaying tourist-site previews in the responsive heritage grid.
+Responsive Logic: Cards occupy one column on mobile, two on tablet, and three on desktop.
+Code Reference: components/molecules/HeritageCard.jsx
+
+3.2 Search Form
+Visual preview: Search heritage sites [ Search... ]
+Usage Context: Used when visitors need to find heritage sites.
+Responsive Logic: The form can fit the available container width and uses a labeled search field.
+Code Reference: components/molecules/SearchForm.jsx
+
+3.3 Navigation Item
+Visual preview: Home | Heritage | About
+Usage Context: Used inside the main navigation to link users to website sections.
+Responsive Logic: Navigation items wrap when the screen becomes narrow.
+Code Reference: components/molecules/NavigationItem.jsx
+
+4. ORGANISMS
+
+4.1 Heritage Grid
+Visual preview:
+[Hundred Islands] [Bolinao Lighthouse] [Balungao Hot Spring]
+Usage Context: Displays multiple Heritage Cards as the main destination section.
+Responsive Logic: Uses CSS Grid: 3 columns on desktop, 2 on tablet, and 1 on mobile.
+Code Reference: components/organisms/HeritageGrid.jsx
+
+4.2 Header Navigation
+Visual preview:
+Pangasinan Heritage     Home Heritage About
+Usage Context: Provides the primary navigation for the website.
+Responsive Logic: The navigation uses flexbox and wraps links on small screens. It remains sticky at the top for easier navigation.
+Code Reference: components/organisms/HeaderNavigation.jsx
+
+5. RESPONSIVE BREAKPOINTS
+Desktop: above 800px – three-column heritage grid.
+Tablet: 561px–800px – two-column heritage grid.
+Mobile: up to 560px – one-column grid and wrapped navigation.
+
+6. ACCESSIBILITY NOTES
+The system uses semantic HTML, descriptive labels, visible keyboard focus indicators, readable contrast, and responsive layouts. These are implementation choices intended to support WCAG 2.1 AA accessibility.
+
+7. REUSABILITY
+Developers can reuse the components by importing them into another page and passing properties such as name, location, and description to HeritageCard. This avoids duplicating the same markup for every destination.

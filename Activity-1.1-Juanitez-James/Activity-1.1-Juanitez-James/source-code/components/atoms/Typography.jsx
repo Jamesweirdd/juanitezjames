@@ -1,0 +1,1 @@
+export function Eyebrow({children}) { return <p className="eyebrow">{children}</p>; } export function Heading({children}) { return <h2>{children}</h2>; }

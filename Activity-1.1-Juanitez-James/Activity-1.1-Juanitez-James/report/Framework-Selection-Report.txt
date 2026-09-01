@@ -1,0 +1,42 @@
+PANGASINAN HERITAGE DIGITAL SHOWCASE
+FRAMEWORK SELECTION REPORT
+
+Prepared by: James Juanitez
+Activity 1.1
+
+1. INTRODUCTION
+The Pangasinan Heritage Digital Showcase is a mobile-first website for promoting important heritage and tourism destinations in Pangasinan. The system needs to be fast on 3G/4G connections, responsive, accessible, maintainable, and suitable for static deployment.
+
+2. FRAMEWORK OPTIONS
+Option A: React with Next.js 14 (App Router)
+Option B: Vue with Nuxt.js 3
+
+3. QUANTITATIVE COMPARISON
+Scores are based on a 1–10 scale, where 10 means the framework is more suitable for the project.
+
+Criteria                         Next.js 14    Nuxt.js 3
+Bundle size & performance            9             9
+Developer velocity                  9             9
+Ecosystem maturity                 10             8
+Learning curve                      8             8
+Component architecture             10             9
+Documentation/community             10             9
+Static/JAMstack suitability         10             9
+TOTAL                               66            61
+
+4. JUSTIFICATION
+Next.js 14 is selected because it provides a strong balance of performance, reusable React components, static export, and a mature ecosystem. Its App Router supports a modern component-based structure, while static export makes the website appropriate for JAMstack-style hosting.
+
+For the project's 3G/4G requirement, the implementation avoids unnecessary dependencies and uses a lightweight component structure. Responsive CSS allows the same interface to work on phones, tablets, and desktop screens.
+
+5. PERFORMANCE
+The project uses static output through next.config.js and keeps dependencies small. The interface is mostly text and reusable components instead of large client-side libraries. This reduces unnecessary resources and makes the site appropriate for users with limited mobile data.
+
+6. MAINTAINABILITY
+The project follows Atomic Design. Atoms are small reusable UI pieces, molecules combine atoms into useful units, and organisms combine molecules into larger page sections. This makes future changes easier because a component can be updated without rewriting the whole page.
+
+7. ACCESSIBILITY
+The interface uses semantic HTML elements such as header, nav, main, section, article, and footer. Navigation has an accessible label, images/placeholders have alternative descriptions, form inputs have labels, and keyboard focus indicators are provided. These practices support the WCAG 2.1 AA goal.
+
+8. CONCLUSION
+Next.js 14 received 66/70 compared with Nuxt.js 3 at 61/70. Therefore, Next.js 14 is the recommended framework for the Pangasinan Heritage Digital Showcase because it provides strong performance, component reuse, static deployment support, and a mature development ecosystem.

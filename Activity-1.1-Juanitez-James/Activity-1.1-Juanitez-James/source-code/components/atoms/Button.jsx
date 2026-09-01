@@ -1,0 +1,1 @@
+export default function Button({children, href="#"}) { return <a className="btn primary" href={href}>{children}</a>; }

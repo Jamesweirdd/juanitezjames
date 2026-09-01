@@ -1,0 +1,2 @@
+import NavigationItem from "../molecules/NavigationItem";
+export default function HeaderNavigation(){return <header className="header"><nav className="nav" aria-label="Main navigation"><a className="brand" href="#">Pangasinan Heritage</a><div className="nav-links"><NavigationItem href="#">Home</NavigationItem><NavigationItem href="#heritage">Heritage</NavigationItem><NavigationItem href="#about">About</NavigationItem></div></nav></header>}

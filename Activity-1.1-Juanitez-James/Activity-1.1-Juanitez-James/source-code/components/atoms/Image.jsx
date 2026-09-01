@@ -1,0 +1,1 @@
+export default function ImagePlaceholder({alt}) { return <div className="card-img" role="img" aria-label={alt}>Pangasinan Heritage</div>; }
